@@ -35,7 +35,54 @@ h1 {
     color: #fff;
 }
 
+.container {
+    display: flex;
+    flex-direction: column; /* Arrange content vertically */
+    align-items: left; /* Center-align items horizontally */
+    text-align: left; /* Center-align text within the container */
+}
 
+.text {
+    padding: 20px;
+}
+
+.header {
+    flex: 30;
+}
+
+.title-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 30; /* Allow the title container to take up some space */
+}
+
+/* Adjust the title styling */
+.title {
+    color: black;
+    font-size: 60px;
+    font-family: Inter;
+    font-style: italic;
+    font-weight: 600;
+    word-wrap: break-word;
+}
+
+.image-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.image-container img {
+    width: 200px;
+    height: auto;
+}
+
+.container img {
+    width: 200px;
+    height: 200px;
+    margin: 30px;
+}
 
 .footnote {
     background-color: #333;
