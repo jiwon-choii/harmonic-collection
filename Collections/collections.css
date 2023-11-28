@@ -1,5 +1,8 @@
 body {
     background-color: #D9D9D9;
+    margin: 0;
+    font-size: 16px; 
+    
 }
 
 .navbar {
@@ -39,10 +42,12 @@ header {
 }
 
 .container {
+    width:90vw;
+    margin: 0 auto;
     display: flex;
     flex-direction: column; 
-    align-items: left; 
-    text-align: left; 
+    justify-content: center;
+    margin-bottom: 0px; 
 }
 
 .text {
@@ -56,22 +61,27 @@ header {
 .image-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
-}
+    gap: 35px;
+
+   
+
+} 
 
 .image-container img {
-    width: 200px;
+    width: auto;
     height: auto;
+    border-radius: 10px;
+
 }
 
 .container img {
-    width: 200px;
-    height: 200px;
-    margin: 30px;
+    display: flex;
+    justify-content: center;
+    margin-inline-start: auto;
+    
 }
 
 .flip-card {
-    perspective: 1000px;
     width: 200px;
     height: 200px;
     position: relative;
@@ -84,6 +94,7 @@ header {
     height: 100%;
     transition: transform 0.5s;
     transform-style: preserve-3d;
+
 }
 
 .flip-card:hover .flip-card-inner {
@@ -96,6 +107,7 @@ header {
     height: 100%;
     position: absolute;
     backface-visibility: hidden;
+    border-radius: 10px;
 }
 
 .flip-card-front {
@@ -119,16 +131,4 @@ header {
     align-items: center;
     text-align: center;
     color: #333;
-}
-
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 3px;
-    position: bottom;
-    bottom: 0;
-    width: 100%;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 12px;
 }
